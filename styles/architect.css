@@ -53,6 +53,34 @@ nav li a{
     margin-top: 20px;
     width: 100%;
 }
+main{
+    max-width: 1440px;
+    margin: 0px auto;
+}
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding: 0px 70px;
+}
+.teams-title{
+    font-size: 2.8rem;
+}
+.quick{
+    color: #727272;
+    font-weight: 500px;
+}
+.text-feature{
+    color: #ff900e;
+    font-weight: 700;
+}
+
 @media screen and (max-width:576px){
     nav{
         flex-direction: column;
