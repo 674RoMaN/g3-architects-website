@@ -55,7 +55,7 @@ nav li a{
 }
 main{
     max-width: 1440px;
-    margin: 0px auto;
+    margin: 70px auto;
 }
 .teams-container{
     display: flex;
@@ -80,20 +80,57 @@ main{
     color: #ff900e;
     font-weight: 700;
 }
+.teams-description, .text-description{
+    color: #727272;
+}
+.text-title{
+    font-size: 2.8rem;
+    color: #131313;
+}
+.facts-cardcontainer{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    border: 1px solid #ff900f;
+    border-radius: 8px;
+    padding: 40px 30px;
+    text-align: center;
+}
+.card-title{
+    font-size: 2.8rem;
+    color: #424242;
+    margin: 10px 0px;
+}
+.card-description{
+    color: #727272;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 5px 0px;
+}
+
+
+
 
 @media screen and (max-width:576px){
-    nav{
+    nav, .teams-container{
         flex-direction: column;
     }
     header{
         padding: 10px;
     }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-content{
+        padding: 0px 20px;
+    }
 }
 @media screen and (min-width:576px) and (max-width:996px){
-    nav{
+    nav, .teams-container{
         flex-direction: column;
     }
     header{
-        padding: 50px;
+        padding: 10px;
     }
 }
